@@ -1,0 +1,60 @@
+# Дз задание 1
+
+def sha(student,shawarma):
+    how_sharama = shawarma // student
+    holodilnik = shawarma % student
+    print(how_sharama)
+    print(holodilnik)
+
+sha(student,shawarma)
+_______________________________
+# Дз задание 2
+
+import itertools
+
+a = list(itertools.product('592', repeat=3))
+for x in a:
+    if x[0] != x[1] != x[2] != x[0]:
+        print(x[0], x[1], x[2])
+
+
+student = int(input())
+shawarma = int(input())
+_______________________________
+# Дз задание 3
+
+cook = int(input())
+clean= int(input())
+wash = int(input())
+
+def cleaner(cook,clean,wash):
+    hours = 10
+    minutes = 0
+    while cook >= 60:
+        cook -= 60
+        hours += 1
+    minutes += cook
+    while clean >= 60:
+        clean -= 60
+        hours += 1
+    minutes += clean
+    while wash >= 60:
+        wash -= 60
+        hours += 1
+    minutes += wash
+    while minutes >= 60:
+        minutes -= 60
+        hours += 1
+    if minutes == 0:
+        a = str(hours) + ':' + str(minutes) + '0'
+    else:
+        a = str(hours) + ':' + str(minutes)
+    return a
+
+print(cleaner(cook,clean, wash))
+
+_______________________________
+# Дз задание 4
+
+
+
