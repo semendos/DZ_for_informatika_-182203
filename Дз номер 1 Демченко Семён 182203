@@ -56,5 +56,88 @@ print(cleaner(cook,clean, wash))
 _______________________________
 # Дз задание 4
 
+def correct_password(password_1, password_2):
+    if password_1 == password_2:
+        print('Пароль принят!')
+    else:
+        print('Пароль не принят! Введённые пароли не совпадают')
+
+
+password_1 = 'qwertY'
+password_2 = 'qwerty'
+
+correct_password(password_1, password_2)
+
+_______________________________
+# Дз задание 5
+
+a = int(input())
+c = int(input())
+
+max_element = str(max(a, c)) + ' наибольшее число'
+min_element = str(min(a, c)) + ' наименьшее число'
+print(max_element, min_element)
+
+_______________________________
+# Дз задание 6
+
+password_1 = int(input())
+
+
+def correct_password(password):
+    if password_1 >= 18:
+        print('Доступ разрешен')
+    else:
+        print('Доступ запрещен')
+
+
+correct_password(password_1)
+
+_______________________________
+# Дз задание 7
+
+number = input()
+
+
+def max_element_of_number(number):
+    d = 0
+    for i in number:
+        if int(i) > d:
+            d = int(i)
+    return d
+
+
+print(max_element_of_number(number))
+
+_______________________________
+# Дз задание 8
+
+number_1 = 1
+number_2 = 3
+number_3 = 6
+number_4 = 9
+
+
+def number_d(number_1, number_2, number_3, number_4):
+    count = 0
+    summ = 0
+    if number_1 % 2 != 0:
+        count += 1
+        summ += number_1
+    if number_2 % 2 != 0:
+        count += 1
+        summ += number_2
+    if number_3 % 2 != 0:
+        count += 1
+        summ += number_3
+    if number_4 % 2 != 0:
+        count += 1
+        summ += number_4
+    print('Количество нечетных:' + str(count))
+    print('Сумма нечетных:' + str(summ))
+
+
+print(number_d(number_1, number_2, number_3, number_4))
+
 
 
