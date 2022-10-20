@@ -35,6 +35,23 @@ else:
 _________________________________________
 Задание 4
 
+a = input()
+max_element = max(a[0],a[1],a[2])
+min_element = min(a[0],a[1],a[2])
+
+if a[0] == max_element or a[0] == min_element:
+    if a[1] == min_element or a[1] == max_element:
+        middle_element = a[2]
+    else:
+        middle_element = a[1]
+else:
+    middle_element = a[0]
+
+if int(max_element) - int(min_element) == int(middle_element):
+    print('Число ' + a + ' - ' + """ 'интересное'""")
+else:
+    print('Число ' + a + ' - ' + """ 'неинтересное'""")
+
 
 _________________________________________
 Задание 5
@@ -49,5 +66,39 @@ elif len(a) > 15:
     print('Ник-нейм может составлять максимум 15 символов!')
 
 
+_________________________________________
+Задание 6
 
+x = 17.5
+y = -17.6
 
+if x > 0 and y > 0:
+    print('Точка пренадлежит первой четверти')
+    a = input()
+    b = input()
+    if len(a) < len(b):
+        print(a + ' - самая короткая строка')
+    else:
+        print(b + ' - самая короткая строка')
+if x < 0 and y > 0:
+    print('Точка пренадлежит второй четверти')
+    f = (2 * abs(x) - y) / y ** 2
+    print(f)
+if x < 0 and y < 0:
+    print('Точка пренадлежит третьей четверти')
+    a = input()
+    print(len(a) * x)
+    print(len(a) * y)
+if x > 0 and y < 0:
+    print('Точка пренадлежит четвертой четверти')
+    if abs(x) > abs(y):
+        print('Координата x – наибольшая по модулю')
+    else:
+        print('Координата y – наибольшая по модулю')
+        
+_________________________________________
+Задание 7
+
+a = input()
+if 'кот' in a:
+    print('Мы погладили кота!')
