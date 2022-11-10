@@ -12,5 +12,70 @@ for i in range(n, 0, -1):
             print(i)
            
 ________________________________
+Задание номер 2
+
+import math
+
+c = input()
+while c != "Конец":
+    if c == 'Лого':
+        string = input()
+        print(math.log(len(string)))
+    if c == 'Триго':
+        number = float(input())
+        print('cos' + '(' + str(number) + ') ' + '= ' + str(math.sin(number)))
+        print('sin' + '(' + str(number) + ') ' + '= ' + str(math.cosh(number)))
+        print('tg' + '(' + str(number) + ') ' + '= ' + str(math.tan(number)))
+        print('ctg' + '(' + str(number) + ') ' + '= ' + str(math.cos(number) / math.sin(number)))
+    if c == "Конец":
+        break
+    c = input()
+    
+ ________________________________
+Задание номер 3
+
+import random
+c = 0
+while c == 0:
+    i = int(input())
+    a = random.randint(1, 1000)
+    b = random.randint(1, 1000)
+    if a < i < b or b < i < a:
+        print('Lucky!')
+        c = 1
+    else:
+        print('Try again!')
+
+ ________________________________
+Задание номер 4
+
+import random, math
+a = int(input())
+b = int(input())
+c = 'y'
+while c == 'y':
+    m = random.uniform(a, b)
+    for i in range(1,int(m)):
+        print(math.log10(i))
+    c = input()
+    if c == 'y':
+        continue
+    elif c == 'n':
+        break
+
+ ________________________________
+Задание номер 5
+
+import math
+
+a = int(input())
+count = 1
+for i in range(1, a):
+    if i % 5 != 0:
+        lk = i * 3.14 * 2
+        sk = 3.14 * (i ** 2)
+        print('Длина окружности с радиусом ' + str(count) + ': ' + str(lk))
+        print('Площадь круга с радиусом ' + str(count) + ': ' + str(sk))
+    count += 1
 
 
