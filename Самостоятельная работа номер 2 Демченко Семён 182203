@@ -2,12 +2,14 @@
 
 Задание номер 3
 
-x = 1
+x = float(input())
+hod = float(input())
+predel = float(input())
 while True:
     function = (2.434 * (x ** 2)) / (3 - (x ** (1./3.)))
     print(function)
-    x += 0.05
-    if x > 2:
+    x += hod
+    if x > predel:
         break
 
 _____________________
@@ -16,7 +18,7 @@ _____________________
 import math
 
 summa = 0
-n = 1
+n = int(input())
 while n <= 5:
     s = 1 / (math.sqrt(4 * n + 1))
     summa += s
