@@ -1,0 +1,27 @@
+
+Задание номер 3
+
+x = 1
+while True:
+    function = (2.434 * (x ** 2)) / (3 - (x ** (1./3.)))
+    print(function)
+    x += 0.05
+    if x > 2:
+        break
+
+_____________________
+Задание номер 4
+
+import math
+
+summa = 0
+n = 1
+while n <= 5:
+    s = 1 / (math.sqrt(4 * n + 1))
+    summa += s
+    n += 1
+
+print(1 / (2 * summa))
+
+______________________
+Задание номер 5
