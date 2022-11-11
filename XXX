@@ -1,0 +1,23 @@
+Вариант 15
+_____________________
+Задание номер 3
+import math
+x = 0.1
+while True:
+    function =((x ** 3) + 2 * (math.cos(x) / math.sin(x))) * math.sin(x)
+    print(function)
+    x += 0.2
+    if x > 1.9:
+        break
+
+_____________________
+Задание номер 4
+
+summa = 0
+n = 2
+while n <= 10:
+    s = (n ** 2) / (5 * n - 5)
+    summa += s
+    n += 1
+
+print(summa)
