@@ -1,0 +1,56 @@
+Задание номер 1
+
+number_of_string = int(input())
+word = ''
+for a in range(number_of_string):
+    a = input()
+    word += a[0]
+print(word.upper())
+
+Задание номер 2
+
+string = input()
+print(len(string))
+print(string[0])
+print(string[-1])
+print(string[::-1])
+print(string[::2])
+print(string[1::2])
+
+
+Задание номер 3
+
+string = input()
+som = 1
+if string.isdigit():
+    for i in string:
+        print(int(i) * 10)
+elif string.isalpha():
+    for i in string:
+        if i == 'q' or i == 'Q':
+            som += 1
+    print(som)
+else:
+    spo = 0
+    for i in string:
+        if i == '!' or i == '?' or i == '#' or i == '/' or i == '*' or i == '&':
+            print(spo)
+        spo += 1
+
+Задание номер 4
+
+while True:
+    string = input()
+    if string.upper() == 'STOP':
+        break
+    elif string.isdigit():
+        print('Цифровая строка')
+    elif string.isalpha():
+        print('Буквенная строка')
+    elif string.isalnum():
+        print('Смешаннаястрока')
+
+
+
+
+
