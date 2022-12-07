@@ -1,0 +1,60 @@
+#1
+
+import random
+
+number = int(input())
+my_file = open("BabyFile.txt", "w+")
+
+for i in range(number):
+    i = random.randint(1000, 10000)
+    my_file.write("\n" + str(i))
+my_file.close()
+
+with open("BabyFile.txt", "r") as file:
+    for line in file:
+        print(line, end="")
+
+#2
+
+import math
+
+a = float(input())
+b = float(input())
+h = float(input())
+my_file = open("BabyFile.txt", "w+")
+i = a
+while a <= i <= b:
+    func = i * math.log(1 + math.sin(i) / i) / i + math.sin(i)
+    my_file.write("\n" + str(func))
+    i += h
+
+my_file.close()
+
+with open("BabyFile.txt", "r") as file:
+    for line in file:
+        print(line, end="")
+        
+
+#3
+
+import random
+
+my_list = ['Бар', 'Машина', 'Любовь', 'Сессия', 'Деньги', 'Честь', 'Погода', 'Жизнь']
+my_file = open("BabyFile.txt", "w+")
+
+for i in range(10):
+    f = random.randint(0,7)
+    i = my_list[f]
+    my_file.write(str(i) + "\n")
+my_file.close()
+
+with open("BabyFile.txt", "r") as file:
+    for line in file:
+        f = random.randint(0, 7)
+        i = my_list[f]
+        print('I recieve ' + line, end="")
+        print('You recieve ' + str(i) + ' ',end="\n")
+
+        
+        
+     
